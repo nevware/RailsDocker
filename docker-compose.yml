@@ -1,0 +1,18 @@
+version: '2'
+services:
+  db:
+    image: postgres:10.0
+    ports:
+      - "5433:5433"
+
+  web:
+    build: .
+    command: bin/rails server --port 3000 --binding 0.0.0.0
+    ports:
+      - "3000:3000"
+    links:
+      - db
+    volumes:
+      - .:/app
+    stdin_open: true
+    tty: true
