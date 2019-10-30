@@ -7,7 +7,7 @@ Download docker-compose.yml and Dockerfile:
 `curl https://raw.githubusercontent.com/nevware/RailsDocker/master/docker-compose.yml -o docker-compose.yml`
 `curl https://raw.githubusercontent.com/nevware/RailsDocker/master/Dockerfile -o Dockerfile`
 
-Once the containers are built, run `docker-compose run web rails new <<projectname>> . -d postgresql -m https://raw.githubusercontent.com/mattbrictson/rails-template/master/template.rb`
+Once the containers are built, run `docker-compose run web rails new . <<projectname>> -d postgresql -m https://raw.githubusercontent.com/mattbrictson/rails-template/master/template.rb`
 
 This will generate a new rails project using the template; it will ask a few questions on the command line.
 
