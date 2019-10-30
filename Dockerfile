@@ -47,7 +47,7 @@ RUN gem install rake -v 12.3.3
 RUN gem install minitest
 RUN gem install active_type -v 1.3.0
 RUN gem install public_suffix -v 4.0.1
-RUN bundle install
+
 # Copy the app's code into the container
 
 
