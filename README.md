@@ -2,7 +2,10 @@
 Docker and docker-compose to use https://github.com/mattbrictson/rails-template.
 
 ## How to use
-Clone this repository, then run `docker-compose build` to build web and postgres containers.
+Download docker-compose.yml and Dockerfile:
+
+`curl https://raw.githubusercontent.com/nevware/RailsDocker/master/docker-compose.yml -o docker-compose.yml`
+`curl https://raw.githubusercontent.com/nevware/RailsDocker/master/Dockerfile -o Dockerfile`
 
 Once the containers are built, run `docker-compose run rails new <<projectname>> . -d postresql -m https://raw.githubusercontent.com/mattbrictson/rails-template/master/template.rb`
 
