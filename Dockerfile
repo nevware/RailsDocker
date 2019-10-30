@@ -32,16 +32,6 @@ WORKDIR $APP_HOME
 
 ADD . $APP_HOME
 
-
-RUN groupadd -g 999 appuser && \
-    useradd -r -u 999 -g appuser appuser
-RUN chown -R appuser:appuser $APP_HOME
-RUN mkdir /home/appuser
-RUN chown -R appuser:appuser /home/appuser
-
-USER appuser
-
-
 RUN gem install rails
 RUN gem install rake -v 12.3.3
 RUN gem install minitest
