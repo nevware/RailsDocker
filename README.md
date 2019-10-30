@@ -18,6 +18,8 @@ Edit config/database.yml, and add
   user:postgres`
 to both development and test.
 
+The easiest next step is to run `docker-compose run web rails db:create` to explicitly create the databases.
+
 Once that's worked, run `docker-compose run bin/setup`; this should complete the setup step.
 
 Finally, you should be able to run `docker-compose up`.
